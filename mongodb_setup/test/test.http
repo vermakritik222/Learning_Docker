@@ -4,7 +4,7 @@ GET http://localhost:8000/
 GET http://localhost:8000/data
 
 ###
-POST http://localhost:8000/createuser
+POST http://localhost:3000/createuser
 Content-Type: application/json
 
 {

@@ -1,4 +1,4 @@
-# Mongodb Setup With Native Docker CMD
+# Mongodb Setup With Docker
 
 ---
 
@@ -61,6 +61,33 @@ $ docker stop <CONTAINER ID>
 
 ```powershell
 $ docker network rm NETWORK [NETWORK...]
+```
+
+## Delete Container
+
+```powershell
+$ docker rm <CONTAINER ID>
+```
+## Delete Image
+
+```powershell
+$ docker rmi <IMAGE ID>
+```
+
+---
+
+# Docker Compose 
+
+```powershell
+$ docker-compose -f ./docker-compose.yml up
+
+$ docker-compose -f ./docker-compose.yml down
+```
+
+# Build Docker Container
+
+```
+$ docker build -t my-app .
 ```
 
 ---

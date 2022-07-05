@@ -1,8 +1,11 @@
 FROM node:alpine
 
-WORKDIR /usr/nodeapp
+ENV DATABASE=mongodb://mongoadmin:<PASSWORD>@localhost:27017 \
+    DATABASE_PASSWORD=secret
 
-COPY ./ ./
+WORKDIR /usr/app
+
+COPY ./ /usr/app
 
 RUN npm install
 
