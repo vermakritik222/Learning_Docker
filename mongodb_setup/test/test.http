@@ -1,0 +1,16 @@
+GET http://localhost:8000/ 
+
+###
+GET http://localhost:8000/data
+
+###
+POST http://localhost:8000/createuser
+Content-Type: application/json
+
+{
+"name":"donedone",   
+"email":"av@test.com",
+"photo":"8tgkuukut96gvywm8d8elmrw2ga6jn9q6972vohte4nzheb6lhxfd99q6jriwuq0gycrdavg5oatt475c0xvwhtrswv3b5ukuhj4puxl6u3gyoh",
+"resId":"62b0a781830000ec3c907aec",
+"password":"password@123"
+}
