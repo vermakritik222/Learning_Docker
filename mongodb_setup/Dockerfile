@@ -1,6 +1,6 @@
 FROM node:alpine
 
-ENV DATABASE=mongodb://mongoadmin:<PASSWORD>@localhost:27017 \
+ENV DATABASE=mongodb://mongoadmin:<PASSWORD>@mongodb \
     DATABASE_PASSWORD=secret
 
 WORKDIR /usr/app
